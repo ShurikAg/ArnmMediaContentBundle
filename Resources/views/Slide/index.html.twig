@@ -1,0 +1,52 @@
+{% extends 'ArnmAraneumBundle::araneum.html.twig' %}
+
+{% block title %}
+	{{ parent() }} | {{ 'slide.list.title'|trans({}, 'media_content') }}
+{% endblock %}
+
+{% block sidebar %}
+	<div class="alert alert-info hint">
+		<span class="label label-info">{{ 'default.label.info'|trans }}</span><br/>
+  		{{ 'slide.info'|trans({}, 'media_content')|raw }}
+	</div>
+{% endblock %}
+ 
+{% block content %}
+	<div class="page-header">
+		<h2>{{ 'slide.list.title'|trans({}, 'media_content') }}</h2>
+	</div>
+	
+	{% include 'ArnmAraneumBundle:Misc:messages.html.twig' %}
+	
+	<table class="table table-hover">
+	    <thead>
+	        <tr>
+	            <th>#</th>
+	            <th class="preview">{{ 'slide.list.table.head.preview'|trans({}, 'media_content') }}</th>
+	            <th>{{ 'slide.list.table.head.url'|trans({}, 'media_content') }}</th>
+	            <th>{{ 'default.label.actions'|trans }}</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	    {% for entity in entities %}
+	        <tr>
+	            <td>{{ entity.id }}</td>
+	            <td class="preview">
+	            	<img src="{{ entity.getWebPath | imagine_filter('araneum_preview') }}" />
+	            </td>
+	            <td>{{ entity.getTargetUrl }}</td>
+	            <td>
+	            	<a href="{{ path('arnm_media_content_slide_edit', { 'id': entity.id }) }}" class="btn btn-default">{{ 'default.label.edit'|trans }}</a>
+	            	<a href="{{ path('arnm_media_content_slide_delete', { 'id': entity.id }) }}" class="btn btn-danger delete-confirm">{{ 'default.label.delete'|trans }}</a>
+	            </td>
+	        </tr>
+	    {% endfor %}
+	    </tbody>
+	</table>
+	
+	<div class="well">
+	    <a href="{{ path('arnm_media_content_slide_new') }}" class="btn btn-primary">
+	        {{ 'slide.list.action.create_new'|trans({}, 'media_content') }}
+	    </a>
+    </div>
+{% endblock %}

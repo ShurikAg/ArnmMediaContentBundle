@@ -1,0 +1,88 @@
+arnm_media_content_slide:
+    pattern:  /araneum/media-content/slide
+    defaults: { _controller: MediaContentBundle:Slide:index }
+arnm_media_content_slide_new:
+    pattern:  /araneum/media-content/slide/new
+    defaults: { _controller: MediaContentBundle:Slide:new }
+arnm_media_content_slide_edit:
+    pattern:  /araneum/media-content/slide/{id}/edit
+    defaults: { _controller: MediaContentBundle:Slide:edit }
+    requirements:
+        id:  \d+
+arnm_media_content_slide_delete:
+    pattern:  /araneum/media-content/slide/{id}/delete
+    defaults: { _controller: MediaContentBundle:Slide:delete }
+    requirements:
+        id:  \d+
+        
+arnm_media_content_strip:
+    pattern:  /araneum/media-content/strip
+    defaults: { _controller: MediaContentBundle:Strip:index }
+arnm_media_content_strip_new:
+    pattern:  /araneum/media-content/strip/new
+    defaults: { _controller: MediaContentBundle:Strip:new }
+arnm_media_content_strip_edit:
+    pattern:  /araneum/media-content/strip/{id}/edit
+    defaults: { _controller: MediaContentBundle:Strip:edit }
+    requirements:
+        id:  \d+
+arnm_media_content_strip_delete:
+    pattern:  /araneum/media-content/strip/{id}/delete
+    defaults: { _controller: MediaContentBundle:Strip:delete }
+    requirements:
+        id:  \d+
+        
+# Widgets
+widget_MediaContent_SlideShow_edit:
+    pattern:  /araneum/widget/MediaContent/SlideShow/edit
+    defaults: { _controller: MediaContentBundle:Widgets\SlideShow:edit }
+    requirements:
+        _method:  GET
+widget_MediaContent_SlideShow_data:
+    pattern:  /araneum/widget/MediaContent/SlideShow/data/{id}
+    defaults: { _controller: MediaContentBundle:Widgets\SlideShow:data }
+    requirements:
+        id:  \d+
+        _method:  GET
+widget_MediaContent_SlideShow_update:
+    pattern:  /araneum/widget/MediaContent/SlideShow/update/{id}
+    defaults: { _controller: MediaContentBundle:Widgets\SlideShow:update }
+    requirements:
+        id:  \d+
+        _method:  PUT
+
+widget_MediaContent_SmallSlideShow_edit:
+    pattern:  /araneum/widget/MediaContent/SmallSlideShow/edit
+    defaults: { _controller: MediaContentBundle:Widgets\SmallSlideShow:edit }
+    requirements:
+        _method:  GET
+widget_MediaContent_SmallSlideShow_data:
+    pattern:  /araneum/widget/MediaContent/SmallSlideShow/data/{id}
+    defaults: { _controller: MediaContentBundle:Widgets\SmallSlideShow:data }
+    requirements:
+        id:  \d+
+        _method:  GET
+widget_MediaContent_SmallSlideShow_update:
+    pattern:  /araneum/widget/MediaContent/SmallSlideShow/update/{id}
+    defaults: { _controller: MediaContentBundle:Widgets\SmallSlideShow:update }
+    requirements:
+        id:  \d+
+        _method:  PUT
+        
+widget_MediaContent_FilmStrip_edit:
+    pattern:  /araneum/widget/MediaContent/FilmStrip/edit
+    defaults: { _controller: MediaContentBundle:Widgets\FilmStrip:edit }
+    requirements:
+        _method:  GET
+widget_MediaContent_FilmStrip_data:
+    pattern:  /araneum/widget/MediaContent/FilmStrip/data/{id}
+    defaults: { _controller: MediaContentBundle:Widgets\FilmStrip:data }
+    requirements:
+        id:  \d+
+        _method:  GET
+widget_MediaContent_FilmStrip_update:
+    pattern:  /araneum/widget/MediaContent/FilmStrip/update/{id}
+    defaults: { _controller: MediaContentBundle:Widgets\FilmStrip:update }
+    requirements:
+        id:  \d+
+        _method:  PUT

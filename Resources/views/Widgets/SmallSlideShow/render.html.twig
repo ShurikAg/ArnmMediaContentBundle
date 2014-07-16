@@ -1,0 +1,19 @@
+{% if slides is defined %}
+	{% if slides|length > 0 %}
+		<div class="small-slideshow">
+			<div class="preview">
+				<img src="{{ slides[0].webPath | imagine_filter('small_slides_preview') }}" class="visible" />
+				<img src="" class="hidden"/>
+			</div>
+			
+			<div class="thumbs-strip">
+				{% for slide in slides %}
+					<img class="thumb" src="{{ slide.webPath | imagine_filter('small_slides_thumb') }}" data-preview="{{ slide.webPath | imagine_filter('small_slides_preview') }}" alt="{{ slide.name }}"/>
+				{% endfor %}
+				<span class="row-widner"></span>
+			</div>
+		</div>
+	{% else %}
+		Slideshow have no slides!
+	{% endif %}
+{% endif %} 

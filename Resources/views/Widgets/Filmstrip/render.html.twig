@@ -1,0 +1,24 @@
+{% if items is defined %}
+	<div class="film-strip">
+		{% for item in items %}
+			{% set url =  item.targetUrl|trim %}
+			{% if url|length > 0%}
+				<div class="item">
+					<h5><a href="{{ url|raw }}">{{ item.name }}</a></h5>
+					<span><a href="{{ url|raw }}">{{ item.caption }}</a></span>
+					<a href="{{ url|raw }}">
+						<img src="{{ item.webPath | imagine_filter('filmstrip') }}" alt="{{ item.name }}" />
+					</a>
+				</div>
+			{% else %}
+				<div class="item">
+					<h5>{{ item.name }}</h5>
+					<span>{{ item.caption }}</span>
+					<img src="{{ item.webPath | imagine_filter('filmstrip') }}" alt="{{ item.name }}" />
+				</div>
+			{% endif %}
+		{% else %}
+			Filmstrip have no items!
+		{% endfor %}
+	</div>
+{% endif %} 

@@ -1,0 +1,24 @@
+{% if slides is defined %}
+	{% if slides|length > 0%}
+		<div id="homepage-carousel">
+		  <div class="slides_container">
+		  	{% for slide in slides %}
+		  		{% set url =  slide.targetUrl|trim %}
+		  		{% if url|length > 0%}
+		  			<div class="">
+		  				<a href="{{ url|raw }}">
+			    			<img src="{{ slide.webPath | imagine_filter('rotator') }}" alt="{{ slide.name }}"/>
+			    		</a>
+			    	</div>
+		  		{% else %}
+			    	<div class="">
+			    		<img src="{{ slide.webPath | imagine_filter('rotator') }}" alt="{{ slide.name }}"/>
+			    	</div>
+		    	{% endif %}
+		    {% endfor %}
+		  </div>
+		</div>
+	{% else %}
+		Slideshow have no slides!
+	{% endif %}
+{% endif %} 

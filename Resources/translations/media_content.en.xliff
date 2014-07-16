@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="media_content.en.xliff">
+        <body>
+            <trans-unit id="1">
+                <source>slide.info</source>
+                <target><![CDATA[<p>Homepage slides are managed here.</p><p>Each slide is represented by an images and potentialy target url.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>slide.list.title</source>
+                <target>Homepage Slides Admin</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>slide.list.table.head.preview</source>
+                <target>Slide Preview</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>slide.list.table.head.url</source>
+                <target>Target URL</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>slide.list.action.create_new</source>
+                <target>Add Slide</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>slide.new.info</source>
+                <target><![CDATA[<p>Add new slide.</p><p>Each slide is represented by an images and potentialy target url.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>slide.form.title.new</source>
+                <target>Add New Slide</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>slide.form.media.label</source>
+                <target>Image</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>slide.form.media.help</source>
+                <target>Image file to bew used for this slide. MUST be 600x347. Will be automatically resized otherwise!</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>slide.form.title.label</source>
+                <target>Title</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>slide.form.title.help</source>
+                <target>Title for convenience or also can be used somewhere in the content.</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>slide.form.order.label</source>
+                <target>Order</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>slide.form.order.help</source>
+                <target>Order of the slide (number)</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>slide.form.url.label</source>
+                <target>Target URL</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>slide.form.url.help</source>
+                <target>Target URL may be specified (optional)</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>slide.form.action.upload</source>
+                <target>Upload</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>slideshow.form.tag.label</source>
+                <target>Slideshow Tag</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>slideshow.form.tag.help</source>
+                <target>The tag of the slides for se in this slideshow.</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>strip.list.title</source>
+                <target>Homepage Film Strip Items</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>strip.info</source>
+                <target><![CDATA[<p>Filmstrip consit of list of images with title, caption and potentially target link.</p><p>This section allows management if the items that the filmstip is build of.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>strip.list.table.head.preview</source>
+                <target>Preview</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>strip.list.table.head.title</source>
+                <target>Title</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>strip.list.action.create_new</source>
+                <target>Add Item</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>strip.form.media.label</source>
+                <target>Image File</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>strip.form.media.help</source>
+                <target>Image file to be used for this item. Must be 160x136 px.</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>strip.form.title.label</source>
+                <target>Title</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>strip.form.title.help</source>
+                <target>Title for this item. Wiil be used for representation.</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>strip.form.caption.label</source>
+                <target>Caption</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>strip.form.caption.help</source>
+                <target>Caption for this item. Will be used for representation.</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>strip.form.order.label</source>
+                <target>Order</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>strip.form.order.help</source>
+                <target>Order of the item relatively to the rest of them.</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>strip.form.url.label</source>
+                <target>Target Url</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>strip.form.url.help</source>
+                <target>Target Url is optional. Will be used as target url from the item.</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>strip.form.action.upload</source>
+                <target>Upload</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>strip.form.title.new</source>
+                <target>Add New Filmstrip Item</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>strip.new.info</source>
+                <target><![CDATA[<p>Here you create a new item to be included in on the filmstrip.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>filmstrip.form.tag.label</source>
+                <target>Tag</target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>filmstrip.form.tag.help</source>
+                <target>Tag if the items to be used for this filmstrip.</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>slide.edit.info</source>
+                <target><![CDATA[<p>Editing of any details of the slide is available.</p><p>When editing the slide it is not required to upload a new image. But if the image is uploaded the old one will be deleted.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>slide.form.title.edit</source>
+                <target>Edit Slide</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>slide.form.action.update</source>
+                <target>Update</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>strip.edit.info</source>
+                <target><![CDATA[<p>Editing of any details of the filmstrip item is available.</p><p>When editing the item it is not required to upload a new image. If the image is uploaded the old one will be deleted.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>strip.form.title.edit</source>
+                <target>Edit Strip Item</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>strip.form.action.update</source>
+                <target>Update</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source>small_slideshow.form.tag.label</source>
+                <target>Tag</target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source>small_slideshow.form.tag.help</source>
+                <target>Tag to use for this slideshow</target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source>small_slideshow.form.slideCount.label</source>
+                <target>Number of Slides</target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>small_slideshow.form.slideCount.help</source>
+                <target>How many slides to use for this slideshow</target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>slide.message.create.success</source>
+                <target>Slide has been created successfully!</target>
+            </trans-unit>
+            <trans-unit id="50">
+                <source>slide.message.update.success</source>
+                <target>Slide has been updated successfully!</target>
+            </trans-unit>
+            <trans-unit id="51">
+                <source>slide.message.delete.success</source>
+                <target>Slide has been deleted successfully!</target>
+            </trans-unit>
+            <trans-unit id="52">
+                <source>strip-item.message.create.success</source>
+                <target>Slide item has been created successfully!</target>
+            </trans-unit>
+            <trans-unit id="53">
+                <source>strip-item.message.update.success</source>
+                <target>Strip item has been updated successfully!</target>
+            </trans-unit>
+            <trans-unit id="54">
+                <source>strip-item.message.delete.success</source>
+                <target>Strip item has been deleted successfully!</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
