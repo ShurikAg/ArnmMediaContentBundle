@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project name="ArnmMediaContentBundle" default="build" basedir="..">
-	<target name="build"
-		depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdoc,phpunit,phpcb" />
+	<target name="build" depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdoc,phpunit,phpcb" />
+	<target name="build-short" depends="prepare,lint,phpunit" />
 
 	<target name="build-parallel" depends="prepare,lint,tools-parallel,phpunit,phpcb" />
 
@@ -46,13 +46,7 @@
 	</target>
 
 	<target name="deps" description="Install dependencies">
-		<!--
-		<exec executable="bash" failonerror="true">
-			<arg value="-c" />
-			<arg value="curl -s http://getcomposer.org/installer | php" />
-		</exec>
-		-->
-		<exec executable="composer.phar" failonerror="true">
+		<exec executable="composer" failonerror="true">
 			<arg value="install" />
 		</exec>
 	</target>
